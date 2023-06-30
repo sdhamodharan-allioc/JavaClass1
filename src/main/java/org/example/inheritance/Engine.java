@@ -16,6 +16,11 @@ public abstract class Engine {
         this.horsePower = horsePower;
     }
 
+    public int getMileage(){
+        System.out.println("Engine getMileage");
+        return calculateMileage();
+    }
+
     //All getters are accessors.
     public String getName() {
         return name;
@@ -61,18 +66,6 @@ public abstract class Engine {
 //    //Dictating your child to take care. This is their future.
 //    protected abstract int gasOrDieselFiled();
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Engine engine = (Engine) o;
-        return horsePower == engine.horsePower && Objects.equals(name, engine.name) && Objects.equals(model, engine.model);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, model, horsePower);
-    }
 
     @Override
     public String toString() {

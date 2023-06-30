@@ -1,5 +1,7 @@
 package org.example.inheritance;
 
+import javax.management.DescriptorKey;
+
 public class PetrolEngine extends Engine{
 
     private String gasoleneGrade;
@@ -8,6 +10,7 @@ public class PetrolEngine extends Engine{
         this.gasoleneGrade = gasoleneGrade;
     }
 
+    @Override
     public int getMileage(){
         return 2 * calculateMileage();
     }

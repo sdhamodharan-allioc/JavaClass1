@@ -13,8 +13,10 @@ public class DieselEngine extends Engine {
 //        return 200;
 //    }
 
+    @Override
     public int getMileage(){
-        return calculateMileage();
+        System.out.println();
+        return (1/2) * calculateMileage();
     }
 
 }
