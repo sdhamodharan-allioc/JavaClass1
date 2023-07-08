@@ -27,14 +27,14 @@ public class Kitchen {
     public void grindChutney(String peanut, String water, String salt, Integer grindingTime)
     {
         for(int i=0; i<= grindingTime; i++){
-            System.out.println(" Gridn in "+blender);
+            System.out.println(" Grind in "+blender);
         }
     }
 
     public void grindChutney(List<Parameters> grindingParameters)
     {
 //        for(int i=0; i<= grindingTime; i++){
-//            System.out.println(" Gridn in "+blender);
+//            System.out.println(" Grind in "+blender);
 //        }
     }
 

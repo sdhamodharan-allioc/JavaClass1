@@ -4,13 +4,13 @@ public class TestArithmetic {
     public static void main(String[] args) {
         System.out.println("-----------Starts-----");
 
-        int a = 20;
+        int a = 0;
         int b = 30;
 
         int sum = a + b;
         int diff = b -a;
         int product = a * b;
-        float quotient = (float) b /(float) a;
+        int quotient =  b /a;
 
         //Relational
         int age = 18;
